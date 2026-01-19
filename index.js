@@ -8,6 +8,7 @@ import { connectDB } from './db/connectDB.js';
 import badges from "./routes/badgesRoute/badges.js";
 import categories from "./routes/categoryRoutes/categories.js";
 import products from "./routes/productsRoutes/products.js";
+import services from "./routes/servicesRoute/services.js";
 import users from "./routes/userRoutes/users.js";
 
 // For ES module __dirname equivalent
@@ -65,6 +66,7 @@ app.use("/api/users", users);
 app.use("/api/products", products);
 app.use("/api/categories", categories);
 app.use("/api/badges", badges);
+app.use("/api/services", services);
 
 // Basic route
 app.get('/', (req, res) => {
